@@ -1,0 +1,34 @@
+set horizontal-scroll-mode off       # wrap lines when past width
+set bell-style             visible   # flash insead of beep
+set visible-stats          on        # report file type on completions
+set show-all-if-ambiguous  on        # auto-expand completions
+set show-all-if-unmodified on        # auto-expand completions
+set completion-ignore-case on        # ignore case on completions
+set mark-directories       on        # append slash to directories
+set mark-symlinked-directories on    # show symbolic links
+
+# left hand
+
+Tab: complete
+
+C-a: menu-complete-backward
+C-s: menu-complete
+
+C-r: previous-history
+"\C-e": next-history
+
+C-u: backward-kill-word
+
+C-v: backward-delete-char
+
+# right hand
+
+C-j: forward-word
+C-l: backward-word
+
+C-k: clear-screen
+
+C-o: forward-char
+C-u: backward-char
+
+C-ç: reverse-search-history

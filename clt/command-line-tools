@@ -1,0 +1,14 @@
+# configuration
+export COMMAND_LINE_TOOLS_ROOT="$COMMAND_LINE_TOOLS_PATH" # this folder
+
+# DEFAULTS
+# export KEYBOARD_LAYOUT="qwerty" # [ dvorak | qwerty ]
+# export BASH_PROMPT_THEME="warm" # [ cold   | warm   ]
+# export BASH_HIDE_DISTRO=false   # [ true   | false  ]
+
+# load tools
+export COMMAND_LINE_TOOLS="$COMMAND_LINE_TOOLS_ROOT/tools"
+source $COMMAND_LINE_TOOLS/bash-prompt.sh
+source $COMMAND_LINE_TOOLS/list-directories.sh
+source $COMMAND_LINE_TOOLS/directory-navigation.sh
+source $COMMAND_LINE_TOOLS/keyboard-shortcuts.sh
