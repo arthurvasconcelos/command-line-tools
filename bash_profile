@@ -1,3 +1,6 @@
+export SHELL=`which zsh`
+[ -z "$ZSH_VERSION" ] && exec "$SHELL" -l
+
 export EDITOR=subl
 
 # export KEYBOARD_LAYOUT="qwerty"
@@ -21,3 +24,8 @@ export COMMAND_LINE_TOOLS_PATH="$HOME/Repos/configs/command-line-tools/clt"
 # eval "$(rbenv init -)"
 
 source $COMMAND_LINE_TOOLS_PATH/command-line-tools
+
+export ANDROID_HOME=$HOME/Android/Sdk
+
+export PATH=$PATH:$HOME/.cargo/bin::$ANDROID_HOME:$ANDROID_HOME/platforms:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+export RUST_SRC_PATH=/home/arthur/src/rust/src
